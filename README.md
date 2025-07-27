@@ -5,8 +5,11 @@ As part of my ongoing efforts to improve our IT services, I'm developing an IT t
 Key Features:
 
 -Ticket Submission: I'll be able to submit tickets for IT-related issues.
+
 -Ticket Tracking: I'll be able to monitor ticket status and communicate with assigned technicians.
+
 -Efficient Resolution: My team will work to resolve tickets in a timely and professional manner.
+
 
 
 Project Goals:
