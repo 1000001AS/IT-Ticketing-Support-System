@@ -15,5 +15,8 @@ Key Features:
 Project Goals:
 
 -Improve efficiency in submitting and resolving IT-related issues.
+
 -Enhance communication between users and technicians.
+
 I-ncrease productivity by streamlining the ticketing process.
+
