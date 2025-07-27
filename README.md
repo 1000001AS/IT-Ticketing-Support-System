@@ -18,5 +18,5 @@ Project Goals:
 
 -Enhance communication between users and technicians.
 
-I-ncrease productivity by streamlining the ticketing process.
+-Increase productivity by streamlining the ticketing process.
 
