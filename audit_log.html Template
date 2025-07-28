@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audit Log Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>🔍 Audit Log Viewer</h2>
+    
+    <form method="GET" action="/audit-log">
+        <label>Role:</label>
+        <select name="role">
+            <option value="">All</option>
+            <option value="admin">Admin</option>
+            <option value="tech">Technician</option>
+            <option value="user">User</option>
+        </select>
+        
+        <label>Action contains:</label>
+        <input type="text" name="keyword" placeholder="e.g. submitted, closed">
+
+        <label>Date Range:</label>
+        <input type="date" name="start_date">
+        <input type="date" name="end_date">
+        
+        <button type="submit">Filter</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Timestamp</th>
+            <th>User</th>
+            <th>Role</th>
+            <th>Action</th>
+            <th>IP Address</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.timestamp }}</td>
+            <td>{{ log.actor.username }}</td>
+            <td>{{ log.role }}</td>
+            <td>{{ log.action }}</td>
+            <td>{{ log.ip_address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
