@@ -1,0 +1,9 @@
+@app.route('/submit', methods=['POST'])
+@login_required
+def submit_ticket():
+    title = request.form['title']
+    description = request.form['description']
+    ticket = Ticket(title=title, description=description, status='open', submitter=current_user.id)
+    db.session.add(ticket)
+    db.session.commit()
+    return redirect('/dashboard')
