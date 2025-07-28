@@ -1,22 +1,41 @@
-# IT-Ticketing-Support-System
+# IT Ticketing System
 
-As part of my ongoing efforts to improve our IT services, I'm developing an IT ticketing support system to provide a streamlined and organized way to manage and resolve IT-related issues.
+An intuitive, role-based ticketing application built using Python and Flask. Designed to streamline internal IT support with secure authentication, dashboard metrics, and user-friendly ticket management.
 
-Key Features:
+---
 
--Ticket Submission: I'll be able to submit tickets for IT-related issues.
+ Features
 
--Ticket Tracking: I'll be able to monitor ticket status and communicate with assigned technicians.
+- Submit and track support tickets
+- Role-based authentication: Admin, Technician, and User
+- Metrics dashboard: Ticket statistics and progress tracking
+- Security features: hashed passwords, input validation, and activity logging
+- Built with Flask, SQLite, and Bootstrap
 
--Efficient Resolution: My team will work to resolve tickets in a timely and professional manner.
+---
 
+Motivation
 
+This project was built as part of my cybersecurity studies and reflects my interest in secure and scalable system design. It’s also intended to demonstrate hands-on development, practical security principles, and GitHub-friendly organization.
 
-Project Goals:
+---
 
--Improve efficiency in submitting and resolving IT-related issues.
+Tech Stack
 
--Enhance communication between users and technicians.
+| Layer        | Tools                            |
+|--------------|----------------------------------|
+| Backend      | Flask, Python                    |
+| Frontend     | HTML, CSS (Bootstrap), JavaScript |
+| Database     | SQLite + SQLAlchemy              |
+| Auth         | Flask-Login, Werkzeug            |
+| Security     | Hashed credentials, logging, validation |
 
--Increase productivity by streamlining the ticketing process.
+---
+
+Security Highlights
+
+- Passwords are hashed using `werkzeug.security`
+- User input sanitized to prevent SQL injection and XSS
+- Routes protected with `@login_required` and role checks
+- Admin dashboard logs key user actions for traceability
 
